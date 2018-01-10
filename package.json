@@ -1,0 +1,35 @@
+{
+  "name": "my-project",
+  "version": "0.0.1",
+  "private": true,
+  "description": "My React Project",
+  "main": "server.js",
+  "author": "Mohsin",
+  "license": "MIT",
+  "dependencies": {
+    "babelify": "^6.0.1",
+    "browserify-middleware": "^5.0.2",
+    "classnames": "~1.2.0",
+    "express": "^4.12.3",
+    "less-middleware": "^2.0.1",
+    "moment": "~2.10.0",
+    "mysql": "^2.15.0",
+    "nunjucks": "^1.2.0",
+    "react": "^0.13.1",
+    "react-router": "^0.13.2",
+    "underscore": "~1.8.3"
+  },
+  "scripts": {
+    "start": "node server",
+    "test": "echo \"no tests yet\" && exit 0",
+    "lint": "eslint ./; true"
+  },
+  "keywords": [
+    "demo"
+  ],
+  "devDependencies": {
+    "babel-eslint": "^2.0.2",
+    "eslint": "^0.18.0",
+    "eslint-plugin-react": "^2.0.2"
+  }
+}
