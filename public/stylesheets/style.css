@@ -21,6 +21,7 @@ a:focus {
 }
 
 .cruddy-auth-blog-nav {
+    top:80px;
     border-radius: 0;
     background-color: #332f2b;
     padding-right: 15px;
@@ -133,11 +134,11 @@ a:focus {
 }
 
 .blog-list {
-  margin: 87px auto 0;
-  padding: 50px;
-  width: 100%;
-  max-width: 700px;
-  text-align: center;
+  /*margin: 87px auto 0;*/
+  /*padding: 50px;*/
+  /*width: 100%;*/
+  /*max-width: 700px;*/
+  /*text-align: center;*/
 }
 
 .blog-add-post {
@@ -148,4 +149,32 @@ a:focus {
 .blog-add-post-body {
   margin: 5px 0 7px;
   width: 100%;
+}
+
+.author-email{
+    font-size: 15px;
+    margin-left: 2%;
+    font-weight: bold;
+    color: #08b7ff;
+}
+
+.author-photo{
+    width:56%;
+}
+
+.form-control{
+    border-radius: 0;
+}
+
+.btn{
+    border-radius: 0;
+    background:orange;
+    color: white;
+}
+
+.btn:hover{
+
+    background: white;
+    color: orange;
+
 }

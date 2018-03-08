@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import ajax from './utils/ajax';
 
-import Navbar from './Navbar';
+import Navigation from './Navbar';
 import Blog from './Blog';
 
 class App extends Component {
@@ -97,7 +97,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Navbar user={this.state.user}
+        <Navigation user={this.state.user}
                 localAuth={this.localAuth.bind(this)}
                 logout={this.logout.bind(this)}/>
         <Blog posts={this.state.posts}

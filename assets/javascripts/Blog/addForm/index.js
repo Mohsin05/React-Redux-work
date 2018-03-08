@@ -1,6 +1,13 @@
 // Component here uses ES6 destructuring syntax in import, what is means is "retrieve the property 'Component' off of the object exported from the 'react'"
 import React, { Component } from 'react';
 
+import  * as ReactBootstrap from 'react-bootstrap';
+
+
+const {
+    Grid, Row, Col, Button, FormGroup, ControlLabel, FormControl
+} = ReactBootstrap;
+
 // Converts javascript date object to 2-digit slashes date format
 import prettyDate from '../utils/prettyDate';
 
@@ -51,8 +58,8 @@ class addForm extends Component {
   render() {
     return (
       <li className="blog-add-post">
-        <input className="blog-add-post-title" type="text" placeholder="Title" onChange={this.updateState.bind(this,'title')} value={this.state.title}/>
-        <textarea className="blog-add-post-body" placeholder="Body" onChange={this.updateState.bind(this,'body')} value={this.state.body}/>
+        <input className="form-control" type="text" placeholder="Title" onChange={this.updateState.bind(this,'title')} value={this.state.title}/>
+        <textarea className="form-control" placeholder="Body" onChange={this.updateState.bind(this,'body')} value={this.state.body}/>
         <button onClick={this.state.addOrUpdate === 'update' &&
                          this.updatePost.bind(this) ||
                          this.addPost.bind(this)}>
